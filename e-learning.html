@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Platform</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Basic body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    /* Header */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Hero section */
+    .hero {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 50px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero .cta-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .hero .cta-btn:hover {
+      background-color: #218838;
+    }
+    /* Featured courses section */
+    .featured-courses {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+    .course-card {
+      background-color: #fff;
+      width: 250px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .course-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .course-card h3 {
+      margin: 15px 0;
+    }
+    .enroll-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .enroll-btn:hover {
+      background-color: #0056b3;
+    }
+    /* Course details and content section */
+    .course-details {
+      padding: 50px;
+    }
+    .course-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .course-video {
+      flex: 1;
+    }
+    .course-description {
+      flex: 2;
+      padding-right: 40px;
+    }
+    .course-content ul {
+      list-style-type: none;
+    }
+    .course-content li {
+      margin: 10px 0;
+    }
+    /* Progress page */
+    .progress-tracking {
+      padding: 50px;
+    }
+    .progress-section {
+      margin-bottom: 40px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Search section */
+    .search-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .search-section input {
+      padding: 10px;
+      width: 60%;
+      font-size: 1rem;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .course-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#signout">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- HOMEPAGE -->
+  <section id="home" class="hero">
+    <h1>Start Learning Today!</h1>
+    <p>Explore thousands of online courses and grow your skills.</p>
+    <button class="cta-btn"><a href="#courses">Browse Courses</a></button>
+  </section>
+  <!-- FEATURED COURSES -->
+  <section class="featured-courses">
+    <h2>Featured Courses</h2>
+    <div class="course-card">
+      <img src="course1.jpg" alt="Course 1">
+      <h3>Web Development</h3>
+      <p>Learn how to build websites from scratch!</p>
+      <button class="enroll-btn"><a href="#course-details">Enroll Now</a></button>
+    </div>
+    <div class="course-card">
+      <img src="course2.jpg" alt="Course 2">
+      <h3>Data Science</h3>
+      <p>Master data analysis and machine learning techniques.</p>
+      <button class="enroll-btn"><a href="#course-details">Enroll Now</a></button>
+    </div>
+    <div class="course-card">
+      <img src="course3.jpg" alt="Course 3">
+      <h3>Digital Marketing</h3>
+      <p>Become an expert in SEO, content, and social media marketing.</p>
+      <button class="enroll-btn"><a href="#course-details">Enroll Now</a></button>
+    </div>
+  </section>
+  <!-- COURSE LISTING -->
+  <section id="courses" class="search-section">
+    <h2>Find the Best Course for You</h2>
+    <input type="text" id="course-search" placeholder="Search courses...">
+    <section class="course-list">
+      <div class="course-card">
+        <img src="course1.jpg" alt="Course 1">
+        <h3>Web Development</h3>
+        <p>Learn how to build websites from scratch!</p>
+        <button class="enroll-btn"><a href="#course-details">Enroll Now</a></button>
+      </div>
+      <div class="course-card">
+        <img src="course2.jpg" alt="Course 2">
+        <h3>Data Science</h3>
+        <p>Master data analysis and machine learning techniques.</p>
+        <button class="enroll-btn"><a href="#course-details">Enroll Now</a></button>
+      </div>
+      <div class="course-card">
+        <img src="course3.jpg" alt="Course 3">
+        <h3>Digital Marketing</h3>
+        <p>Become an expert in SEO, content, and social media marketing.</p>
+        <button class="enroll-btn"><a href="#course-details">Enroll Now</a></button>
+      </div>
+    </section>
+  </section>
+  <!-- COURSE DETAILS -->
+  <section id="course-details" class="course-details">
+    <h1>Web Development</h1>
+    <div class="course-info">
+      <div class="course-description">
+        <p>Learn how to build websites from scratch with HTML, CSS, JavaScript, and more!</p>
+        <p>Instructor: John Doe</p>
+        <p>Level: Beginner</p>
+      </div>
+      <div class="course-video">
+        <h3>Course Introduction Video</h3>
+        <video width="640" height="360" controls>
+          <source src="course_intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="course-content">
+      <h2>Course Content</h2>
+      <ul>
+        <li><a href="#">Introduction to HTML</a></li>
+        <li><a href="#">CSS Styling Basics</a></li>
+        <li><a href="#">JavaScript Fundamentals</a></li>
+        <li><a href="#">Advanced Web Development Techniques</a></li>
+      </ul>
+    </div>
+    <button class="enroll-btn">Enroll Now</button>
+  </section>
+  <!-- PROGRESS TRACKING -->
+  <section id="progress" class="progress-tracking">
+    <h1>Your Learning Progress</h1>
+    <div class="progress-section">
+      <h2>Completed Courses</h2>
+      <ul>
+        <li>Web Development - 100% Completed</li>
+        <li>Data Science - 80% Completed</li>
+      </ul>
+    </div>
+    <div class="progress-section">
+      <h2>Ongoing Courses</h2>
+      <ul>
+        <li>Digital Marketing - 40% Completed</li>
+      </ul>
+    </div>
+    <div class="progress-section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Beginner Web Developer</li>
+        <li>Data Science Explorer</li>
+      </ul>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 E-Learning Platform</p>
+  </footer>
+  <script>
+    // Search functionality for courses
+    document.getElementById('course-search').addEventListener('keyup', function() {
+      const searchQuery = this.value.toLowerCase();
+      const courses = document.querySelectorAll('.course-card');
+
+      courses.forEach(function(course) {
+        const title = course.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(searchQuery)) {
+          course.style.display = 'block';
+        } else {
+          course.style.display = 'none';
+        }
+      });
+    });
+  </script>
+          
