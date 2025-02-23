@@ -10,3 +10,6 @@ This project involved creating an interactive and user-friendly interface with f
 ✅ Course Listing & Navigation.
 ✅ Progress Tracking.
 ✅ Video Embedding & Responsive Design.
+
+#output
+![Image](https://github.com/user-attachments/assets/3bd47e87-b574-4953-891a-634df881b47c)
